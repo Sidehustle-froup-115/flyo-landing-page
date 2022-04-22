@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(218, 28%, 20%);
+}
+.background-image{
+    position: relative;
+    z-index: -1;
+}
+.background-image img{
+    width: 1700px;
+    height: 1000px;
+    position: absolute;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+}
+.logo{
+    margin: 0rem 0rem 0rem 5rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    gap: 1rem;
+    margin: 0rem 0rem 0rem 45rem;
+}
+.menu li{
+    padding: 0.313rem 0.875rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    transition: all ease-in-out .2s;
+}
+li a{
+    color: hsl(0, 0%, 100%);
+    line-height: 40px;
+}
+li a:hover{
+    color: grey;
+}
+li{
+    border:none;
+    position: relative;
+}
+li:hover{
+    border: none;
+}
+li::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    bottom:0;
+    background-color: hsl(0, 0%, 100%);
+    transition: all ease-in-out .2s;
+}
+li:hover::after{
+    width: 100%;
+    left: 0;
+}
+.hero{
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    background: url(images/bg-curvy-desktop.svg) bottom no-repeat;
+    background-size: 100% 150px;
+    
+}
+.hero img{
+    width: 43%;
+}
+.hero h1{
+    padding: 0 25rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.hero p{
+    padding: 2rem 29rem .9rem 29rem;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.hero button{
+    width: 220px;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to right top, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+.middle{
+    text-align: center;
+    margin-top: 10rem;
+}
+
