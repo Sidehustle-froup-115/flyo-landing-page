@@ -5,6 +5,8 @@
 }
 body{
     background-color: hsl(218, 28%, 20%);
+    font-family: 'Open Sans',
+    sans-serif;
 }
 .background-image{
     position: relative;
