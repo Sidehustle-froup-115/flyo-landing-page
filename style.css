@@ -107,6 +107,61 @@ li:hover::after{
     text-align: center;
     margin-top: 10rem;
 }
+/* comments */
+.comments {
+    /* text-align: center; */
+    background-color: #181F2B;
+    color: hsl(0, 0%, 100%);
+    padding: 2rem 5rem;
+}
+.comments-container{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    max-width: 1200px;
+    /* background-color: aquamarine; */
+}
+.quote{
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    left: 10px;
+}
+.card{
+    z-index: 2;
+    background-color: hsl(219, 30%, 18%);
+    width: 45%;
+    max-width: 375px;
+    font-size: 14px;
+    padding: 1.5rem;
+    font-weight: 400;
+    margin: 1rem;
+    border-radius: 5px;
+}
+.card .profile-pic{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.profile-pic img{
+    width: 100%;
+}
+.profile{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.profile h2{
+    font-size: 14px;
+    font-weight: 700;
+}
+.profile .title{
+    font-size: 10px;
+    font-weight: 200;
+}
 /* footer */
 .footer-section{
     display: flex;
